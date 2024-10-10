@@ -1,0 +1,133 @@
+body {
+    font-size: 18px;
+    background-color: white;
+  }
+  
+  /* Styles for tablets or screens 768px wide or less */
+  @media (max-width: 768px) {
+    body {
+      font-size: 16px;
+      background-color: lightgray;
+    }
+  }
+  
+  /* Styles for mobile phones (600px or less) */
+  @media (max-width: 600px) {
+    body {
+      font-size: 14px;
+      background-color: lightblue;
+    }
+  }
+  
+  /* Sidebar styling */
+  #navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      /* Full height of the viewport */
+      width: 290px;
+      background-color: #f4f4f4;
+      /* Light background color */
+      overflow-y: auto;
+      /* Vertical scroll */
+      padding: 1rem;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+      /* Shadow for depth */
+  }
+  
+  header {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #ccc;
+      /* Line below header */
+  }
+  
+  /* Style for navigation links */
+  .nav-link {
+      display: block;
+      padding: 0.8rem 0;
+      /* Space around the links */
+      color: #333;
+      text-decoration: none;
+      font-size: 1.1rem;
+      border-bottom: 1px solid #ccc;
+      /* Line after each link */
+      transition: all 0.3s ease;
+  }
+  
+  .nav-link:hover {
+      color: #007BFF;
+      /* Hover color (blue) */
+      text-decoration: underline;
+      font-size: 1.2rem;
+      /* Slightly larger on hover */
+  }
+  
+  /* Remove bullets and add padding for nested lists */
+  ul {
+      list-style-type: none;
+      padding-left: 0;
+      /* Remove default padding */
+  }
+  
+  ul ul {
+      padding-left: 1rem;
+      /* Add padding to nested sub-menus */
+  }
+  
+  /* Ensure smooth scrolling */
+  html {
+      scroll-behavior: smooth;
+  }
+  
+  #main-doc {
+      position: absolute;
+      margin-left: 310px;
+      padding: 20px;
+      margin-bottom: 110px;
+  }
+  
+  main {
+      display: block;
+      unicode-bidi: isolate;
+  }
+  
+  
+  section {
+      display: block;
+      unicode-bidi: isolate;
+  }
+  
+  section article {
+      color: #4d4e53;
+      margin: 15px;
+      font-size: 0.96em;
+  }
+  
+  
+  article {
+      display: block;
+      unicode-bidi: isolate;
+  }
+  
+  ::marker {
+      unicode-bidi: isolate;
+      font-variant-numeric: tabular-nums;
+      text-transform: none;
+      text-indent: 0px !important;
+      text-align: start !important;
+      text-align-last: start !important;
+  }
+  
+  #sub {
+      list-style-type: square;
+      margin: 2rem;
+  }
+  
+  #small-sub{
+      list-style-type: square;
+      margin: 3rem;
+  }
+  
